@@ -14,5 +14,5 @@ data class NewUser(
     val age: Int,
     @PrimaryKey
     @ColumnInfo(name = "id")
-    val id: Long? = null,
+    val id: Long? = null
 )

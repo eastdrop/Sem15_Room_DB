@@ -5,7 +5,7 @@ import androidx.room.Embedded
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "user")
+@Entity(tableName = "User")
 data class User(
     @PrimaryKey
     @ColumnInfo(name = "id")
@@ -15,7 +15,5 @@ data class User(
     @ColumnInfo(name = "last_name")
     val lastName: String,
     @ColumnInfo(name = "age")
-    val age: Int,
-    @ColumnInfo(name = "birthday")
-    val birthday: String
+    val age: Int
 )
